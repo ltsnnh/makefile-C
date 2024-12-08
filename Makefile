@@ -28,6 +28,7 @@ CPPFLAGS    := $(INC_FLAGS)
 # The final build step
 $(PRJDIR)/$(BINARY): $(OBJS)
 	$(CC) $(LDFLAGS) $(OBJDIR)/*.o -o $@
+	size -B -d $(BINARY)
 
 # Build step for C sources
 $(OBJDIR)/%.o: $(SRCDIR)/%.c
@@ -39,3 +40,6 @@ clean:
 
 clobber: clean
 	-rm -f $(PRJDIR)/$(BINARY)
+
+sizeobj:
+	size -B -d -t $(OBJDIR)/*.o
