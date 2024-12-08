@@ -1,5 +1,4 @@
-# Simple Makefile
----
+# Makefile for C
 ### This project is used with open source tools
 No Windows based IDE environments are used or implied! Cygwin, Linux, MacOS and BSD environments are suitable.
 ### This Makefile can be used to build a project with this kind of structure:

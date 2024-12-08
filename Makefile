@@ -42,4 +42,4 @@ clobber: clean
 	-rm -f $(PRJDIR)/$(BINARY)
 
 sizeobj:
-	size -B -d -t $(OBJDIR)/*.o
+	cd $(OBJDIR)/ && size -B -d -t *.o
