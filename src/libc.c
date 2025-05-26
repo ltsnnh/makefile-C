@@ -1,13 +1,6 @@
-int i;
+#include <math.h>
 
-int libcPow(int a, int b)
+float EuclideanDistance(float* x, float* y, int point1, int point2)
 {
-    int retVal = a;
-
-    for (i = 1; i < b; i++)
-    {
-        retVal *= a;
-    }
-
-    return retVal;
+    return sqrt(pow(x[point1] - x[point2], 2) + pow(y[point1] - y[point2], 2));
 }
