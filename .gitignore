@@ -2,3 +2,5 @@ obj/
 *.o
 *.s
 main
+
+.DS_Store
